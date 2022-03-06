@@ -1,0 +1,38 @@
+{
+  "name": "next-micro-frontend",
+  "version": "0.1.0",
+  "description": "a boilerplate to create microfrontend next js apps",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "nodemonDev": "cd ./project/main && next dev",
+    "dev": "nodemon --config nodemon.json",
+    "build": "cd ./project/main && next build",
+    "start": "cd ./project/main && next start",
+    "lint": "cd ./project/main && next lint",
+    "cypress:run-all-tests": "cypress run",
+    "cypress:run-test": "cypress run --spec",
+    "cypress:run-project": "cypress run --project "
+
+  },
+  "author": "amirreza",
+  "license": "MIT",
+  "workspaces": [
+    "project/*"
+  ],
+  "dependencies": {
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@main/dashboard": "^0.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-preset-react": "^6.24.1",
+    "cypress": "^9.5.1"
+  }
+}

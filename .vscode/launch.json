@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "Start Cypress Test",
+      "type": "node",
+      "request": "launch",
+      "stopOnEntry": false,
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [
+          "cypress:run-test",
+          "${relativeFile}"
+        ],
+      "console": "integratedTerminal",
+      "port": 5858
+    }
+  ]
+}

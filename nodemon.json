@@ -1,0 +1,21 @@
+{
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules",
+      "project/main/*!next.config.js!getRoutes.js",
+
+      "project/**/.next"
+    ],
+ 
+    "watch": [
+      "project/main/next.config.js",
+      "project/main/getRoutes.js",
+      "project/**/RoutesInfo.js",
+      "project/**/routes/"
+    ],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "exec": "npm run nodemonDev"
+  }
