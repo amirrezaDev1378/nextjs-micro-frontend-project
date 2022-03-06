@@ -13,7 +13,6 @@
     "cypress:run-all-tests": "cypress run",
     "cypress:run-test": "cypress run --spec",
     "cypress:run-project": "cypress run --project "
-
   },
   "author": "amirreza",
   "license": "MIT",
@@ -21,9 +20,22 @@
     "project/*"
   ],
   "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.8.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/roboto": "^4.5.3",
+    "@mui/icons-material": "^5.4.4",
+    "@mui/material": "^5.4.4",
+    "axios": "^0.26.0",
     "next": "^12.1.0",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.27.1",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
