@@ -5,11 +5,11 @@ const ServerSideFunctions = {
 };
 
 const getServerSideProps = async (ctx) => {
-  console.log("getServerSideProps");
+  console.log("using server side props");
 
   return {
     props: {
-      hello: "world",
+      msg: "Hi there from server !",
     },
   };
 };
